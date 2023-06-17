@@ -4,7 +4,7 @@ services:
     image: localstack/localstack
     container_name: localstack
     ports:
-      - "4566:4566"
+      - "10000:10000"
       - "9000:9000"
     environment:
       - DEFAULT_REGION=eu-west-1
@@ -13,12 +13,11 @@ services:
       - LAMBDA_EXECUTOR=local
       - DOCKER_HOST=unix:///var/run/docker.sock
       - START_WEB=1
-      - SERVICES=dynamodb
 
   dynamodb:
     image: amazon/dynamodb-local:latest
     ports:
-      - "54000:8000"
+      - "11000:8000"
     environment:
       AWS_ACCESS_KEY_ID: "123"
       AWS_SECRET_ACCESS_KEY: "123"

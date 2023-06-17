@@ -1,13 +1,13 @@
 [
   {
-    "IndexName": "post_user_id_created_at_idx",
+    "IndexName": "post_book_id_created_at_idx",
     "KeySchema": [
       {
-        "AttributeName": "user_id",
+        "AttributeName": "book_id",
         "KeyType": "HASH"
       },
       {
-        "AttributeName": "created_at",
+        "AttributeName": "author_id",
         "KeyType": "RANGE"
       }
     ],
@@ -27,7 +27,7 @@
         "KeyType": "HASH"
       },
       {
-        "AttributeName": "created_at",
+        "AttributeName": "author_name",
         "KeyType": "RANGE"
       }
     ],

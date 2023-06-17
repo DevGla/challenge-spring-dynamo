@@ -14,8 +14,9 @@ class PostService @Autowired constructor(private val repository: PostRepository)
     val user = repository.save(
         Post(
             title = request.title,
-            userId = request.userId,
-            content = request.content
+            bookId = request.bookId,
+            authorId = request.authorId,
+            authorName = request.authorName,
         )
     )
     return Response.from(user)

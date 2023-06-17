@@ -2,6 +2,7 @@ package com.example.demo.reqres
 
 data class Request (
     val title: String,
-    val content: String,
-    val userId: String
+    val authorId: String,
+    val bookId: String,
+    val authorName: String
 )
