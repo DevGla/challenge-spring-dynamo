@@ -28,7 +28,7 @@
 
 -- After type:
 
-- ./scripts/create-dynamodb-table.sh'
+- ./scripts/create-dynamodb-table.sh
 
 ### 4 -- Run the "main" function
 
